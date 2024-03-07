@@ -1,0 +1,69 @@
+.wrapper{
+  width: 400px;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.header{
+  width: full;
+  min-height: 50px;
+  background-color: hsl(10, 79%, 65%);
+  padding: 1em;
+  display: flex;
+  border-radius: 1em;
+}
+.total{
+  display: grid;
+  flex: 1;
+  grid-template-columns: 1;
+  gap: 0.25em;
+}
+.main{
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1em;
+  padding: 1.5em;
+}
+.barGraph{
+  width: 100%;
+  margin-top: 1.5em;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: end;
+  position: relative;
+}
+.graphItem{
+  flex: 13%;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.thisMonth{
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+.lastMonth{
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 50%;
+  text-align: end;
+}
+@media screen and (max-width: 450px) {
+  .wrapper{
+    width: 98%;
+  }
+}
+@media screen and (max-width: 325px) {
+  .wrapper{
+    width: 270px;
+  }
+}
